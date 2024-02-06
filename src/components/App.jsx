@@ -1,5 +1,14 @@
-import css from './App.module.css';
+import { Layout } from './Layout/Layout';
+import { AppBar } from './AppBar/AppBar';
+import { TaskForm } from './TaskForm/TaskForm';
+import { TaskList } from './TaskList/TaskList';
 
 export const App = () => {
-  return <div className={css.container}></div>;
+  return (
+    <Layout>
+      <AppBar />
+      <TaskForm />
+      <TaskList />
+    </Layout>
+  );
 };
